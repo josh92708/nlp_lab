@@ -4,11 +4,12 @@
 
 Authors:
 - [Li Peng-Hsuan 李朋軒](https://jacobvsdanniel.github.io) (jacobvsdanniel [at] gmail.com)
+- Lai Hong-Sheng 賴鴻昇 (b08611048 [at] ntu.edu.tw)
 
 ## Overview
 
 - Solve Natural Language Processing (NLP) tasks
-- Apply Large Language Models (LLM)
+- Apply Large Language Models (LLM) with prompting methods
 - Intended for beginners
   - The source codes are short: be expected to understand them fully.
   - Be expected to develop your own program.
@@ -19,9 +20,24 @@ Authors:
 - Operating system
   - OS-independent
 - System apps
-  - Python 3.9.5+
+  - Python 3.9.5+ (This is the development environment. Older versions may work.)
 - Python packages
   - See *requirements.txt*
+
+```bash
+# Download this repository (If you don't have git, download and unzip the zip file instead.)
+git clone https://github.com/hongsheng-lai/nlp_lab.git
+
+# To check python version
+python --version
+
+# Install with PyPI
+pip install -r requirements.txt
+
+# Install with Conda
+conda install --file requirements.txt
+```
+
 
 ## Lab 1
 
@@ -51,12 +67,13 @@ Prompting Large Language Models (LLM) to solve Natural Language Processing (NLP)
 #### Step 3. [Create your OpenAI API Key](https://platform.openai.com/account/api-keys/)
 
 It is a string that looks like "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx".
+If you have already fill the google form, you should be able to see your orginiztion: "NTUI2AI".
+We already fund the API for you, so you don't need to pay for it. But please don't abuse it.
 
-#### Step 4. [Fund your OpenAI account](https://platform.openai.com/account/billing/)
+> Note: Please remember to keep your API key. It only shows once. And do not share it with others.
 
-$5 should be sufficient to complete all the labs.
 
-If you had trouble funding your account:
+If you want to try other methods:
 - Plan B
   - You can skip Step 3 and 4
   - And try to use the free [website](https://chat.openai.com/) to get results for all the labs.
@@ -66,18 +83,18 @@ If you had trouble funding your account:
   - And try to download and use a smaller LLM, eg. [this](https://huggingface.co/docs/transformers/main/model_doc/llama2) and [that](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM), locally on your own GPU.
   - WARNING: Humongous engineering work ahead! And performance is not guaranteed!
 
-#### Step 5. Check *lab1_config.json*
+#### Step 4. Check *lab1_config.json*
 
 Modify it as you wish.
 
-#### Step 6. Run *lab1_nlp_tasks.py*
+#### Step 5. Run *lab1_nlp_tasks.py*
 
 For example, using linux command line, run
 ```bash
 python lab1_nlp_tasks.py
 ```
 
-#### Step 7. Check results in *lab1_output/*
+#### Step 6. Check results in *lab1_output/*
 
 For example, in *lab1_output/ner__instruction__en__Russo-Ukrainian_War.txt*:
 ```
@@ -101,13 +118,12 @@ The results may vary for each different runs.
 #### Objectives
 
 Solve all tasks (NER, REL, SUM) in both languanges (English, Chinese) with both prompting methods (instruction prompting, in-context learning).
-- The English prompts is already there; you only need to get output results.
+> The English prompts is already there; you only need to get output results. And create your own Chinese prompts.
+> If you have question about Chinese prompts, please contact TA.
 
-#### Submission
-
-- Your prompt files.
-- Your output results.
-- (Lab 1.1 constitutes ~20% of the labs.)
+#### Scoring
+One task in one language: 5 point.
+3 tasks in 2 languages: 30 point.
 
 ### Lab 1.2. Solve new tasks
 
@@ -128,11 +144,10 @@ Solve tasks beyond NER, REL, SUM
   - In-context learning: required
   - Feel free to also use other methods.
 
-#### Submission
+#### Scoring
+One task in one language: 10 point.
+2 tasks in 2 languages: 40 point.
 
-- Your prompt files
-- Your output results
-- (Lab 1.2 constitutes ~20% of the labs.)
 
 ## Lab 2
 
@@ -161,12 +176,27 @@ Play the **修行的德魯伊(A Druid's Journey, 2023)** game
 - Achieve the game objectives
 - Check results in *lab2_output/*
 
-#### Submission
+#### Scoring
+Finish the game: 30 point.
 
-- Your final game states and output files
-- (Lab 2.1 constitutes ~20% of the labs.)
+### Submission
+```
+b08611048_hw3
+├── lab1_output
+|     ├── ner__in-context_learning__en__2023_Hawaii_wildfires.txt
+|     ├── ner__in-context_learning__en__Russo-Ukrainian_War.txt
+|     └── ...
+└── lab1_prompt # You can copy from `corpora/prompt` 
+      ├── ner__in-context_learning__en.txt
+      ├── ner__in-context_learning__zh.txt
+      └── ...
+```
 
-### Lab 2.2. Your own game
+### Lab 2.2. Your own game (Optional)
+This lab is optional, and you can submit it before the final exam.
+I believe you can learn a lot from this lab, so I highly recommend you to try it.
+The TA will give you feedback on your game.
+You can have bonus points depending on the quality of your game. (up to 20 points)
 
 #### Objectives
 
@@ -177,6 +207,7 @@ Create your own game
 - It must create an enjoyable review for each game run.
 
 #### Submission
+You can put in on Github or sumbit all the details directly to TA.
 
 - Your game
   - Program
@@ -192,7 +223,7 @@ Create your own game
 
 ## LICENSE
 
-Copyright © 2023 [Li Peng-Hsuan 李朋軒](https://jacobvsdanniel.github.io)
+Copyright © 2023 [Li Peng-Hsuan 李朋軒](https://jacobvsdanniel.github.io) Lai Hong-Sheng 賴鴻昇
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
