@@ -20,21 +20,24 @@ Authors:
 - Operating system
   - OS-independent
 - System apps
-  - Python 3.9.5+ (This is the development environment. Older versions may work.)
+  - Python 3.9 (This is the development environment. Older versions may work.)
 - Python packages
   - See *requirements.txt*
 
 ```bash
+# move to your working directory
+cd /path/to/your/working/directory
+
 # Download this repository (If you don't have git, download and unzip the zip file instead.)
 git clone https://github.com/hongsheng-lai/nlp_lab.git
+cd nlp_lab
 
 # To check python version
 python --version
 
-# Install with PyPI
+# Install with PyPI, or
 pip install -r requirements.txt
-
-# Install with Conda
+# Install with Conda (If you have Anaconda installed)
 conda install --file requirements.txt
 ```
 
@@ -123,6 +126,7 @@ Solve all tasks (NER, REL, SUM) in both languanges (English, Chinese) with both 
 
 #### Scoring
 One task in one language: 5 point.
+
 3 tasks in 2 languages: 30 point.
 
 ### Lab 1.2. Solve new tasks
@@ -130,22 +134,19 @@ One task in one language: 5 point.
 #### Objectives
 
 Solve tasks beyond NER, REL, SUM
-- For at least 2 tasks
-  - At least one of them must be a well known NLP task.
-  - For inspirations: [CKIP CoreNLP](https://ckip.iis.sinica.edu.tw/service/corenlp/)
-  - For inspirations: [Stanford CoreNLP](https://corenlp.run/)
-  - For inspirations: [Papers With Code - NLP](https://paperswithcode.com/area/natural-language-processing/)
-  - For inspirations: [LDC Catalog](https://catalog.ldc.upenn.edu/)
+- For at least 2 tasks, For inspiration:
+  - [CKIP CoreNLP](https://ckip.iis.sinica.edu.tw/service/corenlp/)
+  - [Stanford CoreNLP](https://corenlp.run/)
+  - [Papers With Code - NLP](https://paperswithcode.com/area/natural-language-processing/)
+  - [LDC Catalog](https://catalog.ldc.upenn.edu/)
 - In at least 2 languages
   - One of them must be English
   - The other may be Chinese or another language
-- Using multiple prompting methods
-  - Instruction prompting: required
-  - In-context learning: required
-  - Feel free to also use other methods.
+- You can use use other news materials, add them in corresponding folders, and don't need to provide them in your submission.
 
 #### Scoring
 One task in one language: 10 point.
+
 2 tasks in 2 languages: 40 point.
 
 
@@ -174,29 +175,38 @@ Using LLM train of thought to achieve complicated behavior
 Play the **修行的德魯伊(A Druid's Journey, 2023)** game
 - Run *lab2_train_of_thought.py*
 - Achieve the game objectives
-- Check results in *lab2_output/*
+- Check results in *lab2_output/* (you should see at least *summary_1.txt*)
 
 #### Scoring
 Finish the game: 30 point.
 
 ### Submission
+
 ```
-b08611048_hw3
+{student_id}_hw3    # In lowercase
 ├── lab1_output
-|     ├── ner__in-context_learning__en__2023_Hawaii_wildfires.txt
-|     ├── ner__in-context_learning__en__Russo-Ukrainian_War.txt
-|     └── ...
-└── lab1_prompt # You can copy from `corpora/prompt` 
-      ├── ner__in-context_learning__en.txt
-      ├── ner__in-context_learning__zh.txt
-      └── ...
+|   ├── ner__in-context_learning__en__2023_Hawaii_wildfires.txt
+|   ├── ner__in-context_learning__en__Russo-Ukrainian_War.txt
+|   └── ...
+├── lab1_prompt # You can copy from `corpora/prompt` 
+|   ├── ner__in-context_learning__en.txt
+|   ├── ner__in-context_learning__zh.txt
+|   └── ...
+└── lab2_output
+    ├── state
+    |   └── save_1.json
+    ├── summary_1.txt
+    └── ...
+
+# Zip it and Summit to NTU COOL
+-> {student_id}_hw3.zip
 ```
 
 ### Lab 2.2. Your own game (Optional)
 This lab is optional, and you can submit it before the final exam.
 I believe you can learn a lot from this lab, so I highly recommend you to try it.
 The TA will give you feedback on your game.
-You can have bonus points depending on the quality of your game. (up to 20 points)
+You can have bonus points depending on the quality of your game.
 
 #### Objectives
 
@@ -218,8 +228,7 @@ You can put in on Github or sumbit all the details directly to TA.
 - A report
   - Game description
   - Details on the LLM tasks applied
-  - Your discovery
-- (Lab 2.2 constitutes ~40% of the labs.)
+  - Your discovery)
 
 ## LICENSE
 
