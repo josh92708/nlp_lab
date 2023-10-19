@@ -178,9 +178,9 @@ Play the **修行的德魯伊(A Druid's Journey, 2023)** game
 - Check results in *lab2_output/* (you should see at least *summary_1.txt*)
 
 #### Scoring
-Finish the game: 30 point.
+Finish the game: 20 point.
 
-### Submission
+### Submission for Lab 1 + Lab 2.1
 
 ```
 {student_id}_hw3    # In lowercase
@@ -202,8 +202,8 @@ Finish the game: 30 point.
 -> {student_id}_hw3.zip
 ```
 
-### Lab 2.2. Your own game (Optional)
-This lab is optional, and you can submit it before the final exam.
+### Lab 2.2. Your own game
+This lab takes a lot of time (at least 10 hours), so you can submit it before 11/21.
 I believe you can learn a lot from this lab, so I highly recommend you to try it.
 The TA will give you feedback on your game.
 You can have bonus points depending on the quality of your game.
@@ -215,9 +215,12 @@ Create your own game
 - It must use multiple LLM tasks.
 - It must require LLM to digest its own outputs.
 - It must create an enjoyable review for each game run.
+  
+#### Scoring
+10 point. (Bonus points may be given depending on the quality of your game.)
 
 #### Submission
-You can put in on Github or sumbit all the details directly to TA.
+You can put in on Github or sumbit all the details directly in a zip file to TA.
 
 - Your game
   - Program
@@ -228,7 +231,7 @@ You can put in on Github or sumbit all the details directly to TA.
 - A report
   - Game description
   - Details on the LLM tasks applied
-  - Your discovery)
+  - Your discovery
 
 ## LICENSE
 
