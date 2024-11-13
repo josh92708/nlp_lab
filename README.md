@@ -75,17 +75,6 @@ We already fund the API for you, so you don't need to pay for it. But please don
 
 > Note: Please remember to keep your API key. It only shows once. And do not share it with others.
 
-
-If you want to try other methods:
-- Plan B
-  - You can skip Step 3 and 4
-  - And try to use the free [website](https://chat.openai.com/) to get results for all the labs.
-  - WARNING: A lot of manual labor ahead!
-- Plan C
-  - You can skip Step 3 and 4
-  - And try to download and use a smaller LLM, eg. [this](https://huggingface.co/docs/transformers/main/model_doc/llama2) and [that](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM), locally on your own GPU.
-  - WARNING: Humongous engineering work ahead! And performance is not guaranteed!
-
 #### Step 4. Check *lab1_config.json*
 
 Modify it as you wish.
