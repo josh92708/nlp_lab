@@ -172,7 +172,7 @@ Finish the game: 20 point.
 ### Submission for Lab 1 + Lab 2.1
 
 ```
-{student_id}_hw3    # In lowercase
+{student_id}_hw4    # In lowercase
 ├── lab1_output
 |   ├── ner__in-context_learning__en__2023_Hawaii_wildfires.txt
 |   ├── ner__in-context_learning__en__Russo-Ukrainian_War.txt
@@ -188,7 +188,7 @@ Finish the game: 20 point.
     └── ...
 
 # Zip it and Summit to NTU COOL
--> {student_id}_hw3.zip
+-> {student_id}_hw4.zip
 ```
 
 ### Lab 2.2. Your own game
