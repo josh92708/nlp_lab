@@ -203,7 +203,7 @@ Finish the game: 20 point.
 ```
 
 ### Lab 2.2. Your own game
-This lab takes a lot of time (at least 10 hours), so you can submit it before 11/21.
+This lab takes a lot of time (at least 10 hours), so you can submit it before 12/10.
 I believe you can learn a lot from this lab, so I highly recommend you to try it.
 The TA will give you feedback on your game.
 You can have bonus points depending on the quality of your game.
